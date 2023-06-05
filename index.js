@@ -45,4 +45,8 @@ app.get('/posts', auth, (req, res) => {
     ])
 })
 
+app.get('/', (req, res) => {
+    res.send("API Online")
+})
+
 app.listen(3000, () => console.log('Server is running at http://localhost:3000'));

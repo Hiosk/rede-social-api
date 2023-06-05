@@ -7,7 +7,7 @@ const auth = require('./middleware/auth');
 const app = express();
 
 // Conectar ao banco de dados MongoDB
-mongoose.connect('mongodb://localhost:27017/ghfit', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://wellingtonwd25:NC1BNSigAkwSZdTL@cluster0.hajkllb.mongodb.net/redesocial?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.json());
 
